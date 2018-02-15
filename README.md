@@ -7,7 +7,7 @@ We use Sklearn2sql. Sklearn2sql provides a framework for translating scikit-lear
 The goal of this POC is to see if this framework can be applied to deep learning models (keras + scikit-learn wrapper).
 
 
-In a first step, we investigate the SQL code generation for basic deep learning models (keras core layers and activation functions). A second step will investigate basic convolutional models (with convolutional and pooling layers).
+In a first step, we investigate the SQL code generation for basic deep learning models ([keras core layers](https://keras.io/layers/core/) and [activation functions](https://keras.io/layers/advanced-activations/)). A second step will investigate basic convolutional models (with [convolutional](https://keras.io/layers/convolutional/) and [pooling](https://keras.io/layers/pooling/) layers).
 
 We are aware that deep learning models tend to have a large number of parameters (layer weights) and hope that SQL deployment wil be usable for small and medium models. 
 
