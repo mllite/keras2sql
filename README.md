@@ -2,9 +2,9 @@
 
 Are you curious to know if a SQL database can be used to deploy/evaluate a deep-learning model instead of the standard CPU/GPU/CUDA/OpenCL machinery ?
 
-We use Sklearn2sql. Sklearn2sql provides a framework for translating scikit-learn predictive models into a SQL code for deployment purposes. Using this framework, for example, it is possible for a C, perl or java developper to deploy such a model simply by executing the [generated SQL code](https://github.com/antoinecarme/sklearn2sql-demo/blob/master/sample_outputs_round_4/MLPClassifier/BreastCancer/oracle/demo1_MLPClassifier_oracle.sql). The system supports the major market databases.
+We use Sklearn2sql. Sklearn2sql provides a framework for translating [scikit-learn](https://github.com/scikit-learn/scikit-learn) predictive models into a SQL code for deployment purposes. Using this framework, for example, it is possible for a C, perl or java developper to deploy such a model simply by executing the [generated SQL code](https://github.com/antoinecarme/sklearn2sql-demo/blob/master/sample_outputs_round_4/MLPClassifier/BreastCancer/oracle/demo1_MLPClassifier_oracle.sql). The system supports the major market databases.
 
-The goal of this POC is to see if this framework can be applied to deep learning models (keras + scikit-learn wrapper).
+The goal of this POC is to see if this framework can be applied to deep learning models ([keras](https://github.com/keras-team/keras) + scikit-learn wrapper).
 
 
 In a first step, we investigate the SQL code generation for basic deep learning models ([keras core layers](https://keras.io/layers/core/) and [activation functions](https://keras.io/layers/advanced-activations/)). A second step will investigate basic convolutional models (with [convolutional](https://keras.io/layers/convolutional/) and [pooling](https://keras.io/layers/pooling/) layers).
