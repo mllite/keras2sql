@@ -16,3 +16,9 @@ An evaluation of database capabilities with respect to the model size is already
 An additional/optional path to explore is to evaluate SQL code generation for the family of recursive models (RNN , LSTM and GRU, etc) and more advanced keras features.
 
 Your feedback is welcome.
+
+Update (2018-06-22) : 
+1. Sample Regression Model (KerasRegressor): https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_boston.ipynb
+2. Sample Classification Model (KerasClassifier with Dense Layer) : https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris.ipynb
+3. Sample Convolutional Model (KerasClassifier with Conv2D Layer and MaxPooling) :  https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_mnist.ipynb
+4. Recurrent Neural Network (SimpleRNN) : https://github.com/antoinecarme/keras2sql/blob/master/doc/recurrent/keras_boston-SimpleRNN.ipynb
