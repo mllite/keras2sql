@@ -22,3 +22,4 @@ Update (2018-06-22) :
 2. Sample Classification Model (KerasClassifier with Dense Layer) : https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris.ipynb
 3. Sample Convolutional Model (KerasClassifier with Conv2D Layer and MaxPooling) :  https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_mnist.ipynb
 4. Recurrent Neural Network (SimpleRNN) : https://github.com/antoinecarme/keras2sql/blob/master/doc/recurrent/keras_boston-SimpleRNN.ipynb
+5. Does not depend (a lot ;) on the backend used : Iris example with [tensorflow](https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris-tensorflow.ipynb) , [theano](https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris-theano.ipynb) and [cntk](https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris-cntk.ipynb) .
