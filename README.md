@@ -17,7 +17,7 @@ An additional/optional path to explore is to evaluate SQL code generation for th
 
 Your feedback is welcome.
 
-Update (2018-06-22) : 
+Update (2018-07-17) : 
 1. Sample Regression Model (KerasRegressor): https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_boston.ipynb
 2. Sample Classification Model (KerasClassifier with Dense Layer) : https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_iris.ipynb
 3. Sample Convolutional Model (KerasClassifier with Conv2D Layer and MaxPooling) :  https://github.com/antoinecarme/keras2sql/blob/master/doc/keras_mnist.ipynb
