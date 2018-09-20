@@ -19,13 +19,13 @@ keras_input_1 AS
 (SELECT keras_input.[KEY] AS [KEY], keras_input.[Feature_0] AS [Feature_0], keras_input.[Feature_1] AS [Feature_1], keras_input.[Feature_2] AS [Feature_2], keras_input.[Feature_3] AS [Feature_3] 
 FROM keras_input), 
 layer_dense_1 AS 
-(SELECT keras_input_1.[KEY] AS [KEY], -0.12752391397953033 + 0.4536078870296478 * keras_input_1.[Feature_0] + -0.7170146107673645 * keras_input_1.[Feature_1] + -1.2954500913619995 * keras_input_1.[Feature_2] + -0.8475359678268433 * keras_input_1.[Feature_3] AS output_1, -0.09334033727645874 + -0.6155808568000793 * keras_input_1.[Feature_0] + -0.29906973242759705 * keras_input_1.[Feature_1] + -1.3182556629180908 * keras_input_1.[Feature_2] + 0.6055045127868652 * keras_input_1.[Feature_3] AS output_2, 0.12729860842227936 + -0.30023306608200073 * keras_input_1.[Feature_0] + 0.46775707602500916 * keras_input_1.[Feature_1] + 0.09395249933004379 * keras_input_1.[Feature_2] + -0.5479800701141357 * keras_input_1.[Feature_3] AS output_3, -0.1252007782459259 + -0.13082896173000336 * keras_input_1.[Feature_0] + 0.7229157090187073 * keras_input_1.[Feature_1] + -0.22813092172145844 * keras_input_1.[Feature_2] + 0.4703584611415863 * keras_input_1.[Feature_3] AS output_4 
+(SELECT keras_input_1.[KEY] AS [KEY], 0.15351666929196153 + 0.849628653630841 * keras_input_1.[Feature_0] + 0.7429914514561644 * keras_input_1.[Feature_1] + 0.019779647198307593 * keras_input_1.[Feature_2] + 1.0230880724890996 * keras_input_1.[Feature_3] AS output_1, -0.14877958519498954 + -0.7763849065435856 * keras_input_1.[Feature_0] + -0.07180150920277968 * keras_input_1.[Feature_1] + -0.40053764705761286 * keras_input_1.[Feature_2] + -0.07684746196798514 * keras_input_1.[Feature_3] AS output_2, 0.14912428653548832 + -0.256574512817607 * keras_input_1.[Feature_0] + 0.22129523343447297 * keras_input_1.[Feature_1] + 0.4481093552097636 * keras_input_1.[Feature_2] + -0.20359972875850027 * keras_input_1.[Feature_3] AS output_3, 0.14089784507066358 + 0.9247414239651743 * keras_input_1.[Feature_0] + -0.26808080954946384 * keras_input_1.[Feature_1] + 0.4884524438813464 * keras_input_1.[Feature_2] + 0.9882631616286883 * keras_input_1.[Feature_3] AS output_4 
 FROM keras_input_1), 
 layer_dense_1_1 AS 
 (SELECT layer_dense_1.[KEY] AS [KEY], layer_dense_1.output_1 AS output_1, layer_dense_1.output_2 AS output_2, layer_dense_1.output_3 AS output_3, layer_dense_1.output_4 AS output_4 
 FROM layer_dense_1), 
 layer_dense_2 AS 
-(SELECT layer_dense_1_1.[KEY] AS [KEY], 0.12637509405612946 + -0.8966023921966553 * layer_dense_1_1.output_1 + -0.052544791251420975 * layer_dense_1_1.output_2 + 1.0748215913772583 * layer_dense_1_1.output_3 + -0.8633612990379333 * layer_dense_1_1.output_4 AS output_1 
+(SELECT layer_dense_1_1.[KEY] AS [KEY], 0.1446716832094118 + 0.5542090868139369 * layer_dense_1_1.output_1 + -0.42504204277303353 * layer_dense_1_1.output_2 + 1.1557839908312857 * layer_dense_1_1.output_3 + 0.86996203274465 * layer_dense_1_1.output_4 AS output_1 
 FROM layer_dense_1_1)
  SELECT layer_dense_2.[KEY] AS [KEY], layer_dense_2.output_1 AS [Estimator] 
 FROM layer_dense_2
